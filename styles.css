@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(250, 233, 254);
+    font-family: 'Beau Rivage', cursive;
+}
+
+.footer {
+    background-color: rgb(250, 233, 254);
+}
+
+.imag {
+    height: 40vh;
+    object-fit: cover;
+}
+
+.icon {
+    font-size: 60px;
+    background-color: rgb(250, 165, 165);
+    color: rgb(255, 255, 255);
+}
+
+.img__footer {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nosotros {
+    background-color: #f0dfc8;
+}
+
+.nosotros__font {
+    font-family: 'Beau Rivage', cursive;
+}
+
+
+.servicios {
+    background-color: #f0dfc8;
+}
+
+
+@media only screen and (min-width: 576px) {
+    .imag {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .img-fluid {
+        width: 50%;
+    }
+}
+
