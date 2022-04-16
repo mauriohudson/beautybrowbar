@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/20fed15e3c.js"
       crossorigin="anonymous"
@@ -34,7 +35,7 @@
     <header class="sticky-top header">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand " href="index.html">
+          <a class="navbar-brand " href="#">
             <img width="150" height="100" src="img/logo2.svg" alt="" />
           </a>
           <button
@@ -51,13 +52,13 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav text-center fw-bold fs-1">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
+                <a class="nav-link" href="#">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">Galeria</a>
@@ -71,74 +72,119 @@
       </nav>
     </header>
     <!-- =============================================================================================================================== -->
-    <!-- HOME -->
-    <!-- =============================================================================================================================== -->
-    <main class="container__main">
-      <div>
-        <div class="position-relative">
-          <h1 class="main-h1 display-1 w-100 text-center position-absolute"> <span class="beauty"> Beauty </span> <span class="brow"> Brow</span> <span class="bar"> Bar </span></h1>
-        </div>
-        <div class="imag">
-          <img src="img/qwe.svg" class="img-fluid w-100 h-100" alt="">
-        </div>
-      </div>
-    </main>
-    <!-- =============================================================================================================================== -->
-    <!-- NOSOTROS -->
-    <!-- =============================================================================================================================== -->
-    <section class="nosotros p-3">
-        <div class="container__nosotros">
-            <div class="row aling-items-center justify-content-between text-center">
-                <div class="col-md">
-                    <img class="img-fluid" src="img/nosotros.jpg" alt="">
-                </div>
-                <div class="col-md p-5 nosotros__font">
-                    <h3 class="fs-1"> <span class="beauty">Beauty</span> <span class="brow">Brow</span> <span class="bar">Bar</span></h3>
-                    <p class="p1 lead fs-2">
-                        Comienza hoy mismo a escribir la historia de tu éxito. Fíjate tus
-                        <br class="d-none d-lg-block">
-                        metas y síguelas hasta que se conviertan en realidad.
-                        <br class="d-none d-lg-block">
-                        Tú tienes que creer en ello aún antes de verlo.
-                        <br class="d-none d-lg-block">
-                        Cualquier cosa que tu mente pueda recibir y entender, se puede lograr.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- =============================================================================================================================== -->
     <!-- SERVICIOS -->
     <!-- =============================================================================================================================== -->
-    <section class="servicios text-center">
-        <div class="row p-5">
-            <div class="col">
-                <div class="card">
-                    <img src="img/111.svg" class="card-img-top" alt="">
-                    <div class="card-body card1">
-                        <h1>Depilacion con hilo, Rostro Completo</h1>
-                        <a href="#" class="btn btn-primary"> Mas Informacion</a>
+    <section class="servicios__page">
+        <div class="container__servicios">
+            <div class="pb-5 text-center">
+                <h1 class="text-title"><span class="beauty"> Beauty </span> <span class="brow"> Brow</span> <span class="bar"> Bar </span></h1>
+                <p class="text-title bg-light">Lista de precios</p>
+            </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Cejas</h3>
+                    <p>(incluye entrecejo)</p>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$800</p>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/laminado.svg" class="card-img-top" alt="">
-                    <div class="card-body card2">
-                        <h1>Diseño, Perfilado & Laminado de cejas</h1>
-                        <a href="#" class="btn btn-primary"> Mas Informacion</a>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Bozo</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$400</p>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="img/pestañas.svg" class="card-img-top" alt="">
-                    <div class="card-body card3">
-                        <h1>Lifting & Tintes de pestañas</h1>
-                        <a href="#" class="btn btn-primary"> Mas Informacion</a>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Menton</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$400</p>
                     </div>
                 </div>
-            </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Patillas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$350</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Entrecejo</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$350</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Mejillas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$350</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Pomulos</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$350</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Cuello</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$400</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Lifting de pestañas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$2000</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Tinte de pestañas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$600</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Tinde de cejas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$600</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Laminado de cejas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$1700</p>
+                    </div>
+                </div>
+                <div class="row text-start pb-2">
+                    <div class="col-8 border-end border-dark border-3">
+                    <h3 class="textServicios">Alisado de cejas</h3>
+                    </div>
+                    <div class="col-4">
+                    <p class="text-start price">$1700</p>
+                    </div>
+                </div>
         </div>
     </section>
     <!-- =============================================================================================================================== -->
