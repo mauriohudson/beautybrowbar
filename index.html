@@ -11,13 +11,10 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/20fed15e3c.js"
       crossorigin="anonymous"
@@ -65,10 +62,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#seccion-2">Nosotros</a>
+                <a class="nav-link" href="">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#seccion-3">Servicios</a>
+                <a class="nav-link" href="precios.html">Servicios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="galeria.html">Galeria</a>
@@ -84,46 +81,101 @@
     <!-- =============================================================================================================================== -->
     <!-- HOME -->
     <!-- =============================================================================================================================== -->
-    <main class="container__main">
-      <div>
-        <div class="position-relative">
-          <h1 class="main-h1 display-1 w-100 text-center position-absolute text-decoration-underline">
-            Beauty Brow Bar
-          </h1>
+    <main class="home">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+      <div class="carousel-controls">
+          <div class="carousel-indicators">
+            <button
+              style="background-image: url(salonimg/home1.jpg)"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active carouselExampleIndicators"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              style="background-image: url(salonimg/home2.jpg)" 
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="carouselExampleIndicators"
+            ></button>
+            <button
+              style="background-image: url(salonimg/home3.jpg)"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="carouselExampleIndicators"
+            ></button>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <img src="salonimg/arrow-left-fill.svg" alt="left" />
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <img src="salonimg/arrow-right-fill.svg" alt="right" />
+          </button>
         </div>
-        <div class="imag">
-          <img src="img/qwe.svg" class="img-fluid w-100 h-100" alt="" />
+        <div class="carousel-inner">
+          <div class="carousel-item def1 active">
+            <div class="container__text">
+              <h1 class="texto-central">Beauty Brow Bar</h1>
+              <p class="texto-central">Estetica Facial</p>
+            </div>
+          </div>
+          <div class="carousel-item def2">
+            <div class="container__text">
+              <h1 class="texto-central">Beauty Brow Bar</h1>
+              <p class="texto-central">Estetica Facial</p>
+            </div>
+          </div>
+          <div class="carousel-item def3">
+            <div class="container__text">
+              <h1 class="texto-central">Beauty Brow Bar</h1>
+              <p class="texto-central">Estetica Facial</p>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <!-- =============================================================================================================================== -->
     <!-- NOSOTROS -->
     <!-- =============================================================================================================================== -->
-    <section class="nosotros p-3">
+    <section class="nosotros p-5">
       <div id="seccion-2" class="container__nosotros">
         <div class="row aling-items-center justify-content-between text-center">
           <div class="col-md">
-            <img class="img-fluid" src="img/nosotros.jpg" alt="" />
+            <img class="img-fluid imgfluid" src="salonimg/feminism1.svg" alt="" />
           </div>
-          <div class="col-md p-5 nosotros__font">
-            <h3 class="fs-1">
-              <span class="beauty">Beauty</span> <span class="brow">Brow</span>
-              <span class="bar">Bar</span>
-            </h3>
+          <div class="col-md nosotros__font">
             <p class="p1 lead fs-2">
-              Estamos trabajando en un sueño,
+              Nos encanta lo que hacemos por eso, garantizamos
               <br class="d-none d-lg-block" />
-              uno que hace un tiempo atras no creiamos posible.
+              un trabajo con mucha pasion, esfuerzo y empeño.
               <br class="d-none d-lg-block" />
-              Siempre nos hicieron creer que solo los cumplen otro tipo de personas..
+              Nos preocupamos por realizar un trabajo de calidad, 
               <br class="d-none d-lg-block" />
-              Y aca estamos, dos pares de hermanas (dos tias y sus dos sobrinas)
+              para que nuestros clientes queden totalmente
               <br class="d-none d-lg-block" />
-              poiendo lo mejor de nosotros, construyendo nuestra pasion
+              satisfechos con el servicio que brindamos 
               <br class="d-none d-lg-block" />
-              en una profesion. aprendiendo y mejorando, por un sueño.
-              <br class="d-none d-lg-block" />
-              Nuestro sueños
+              realizado con mucha pasion.
             </p>
           </div>
         </div>
@@ -133,7 +185,75 @@
     <!-- SERVICIOS -->
     <!-- =============================================================================================================================== -->
     <section id="seccion-3" class="servicios text-center">
-      <h1 class="servicios_h1 display-1">Nuestros Servicios</h1>
+      <h1 class="display-1 servicios_title">Nuestros Servicios</h1>
+      <div class="container">
+            <div class="d-flex cartas row">
+              <div class="col">
+                <article class="card cart">
+                  <div class="card__content">
+                    <h3 class="card__title">Depilacion</h3>
+                    <p class="card__description">con hilo Rostro Completo</p>
+                    <span class="card__subtitle">$990</span>
+                    <a href="precios.html"><button class="servicios__boton">
+                      <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Servicios</span>
+                    </button>
+                  </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card cart1">
+                  <div class="card__content">
+                    <h3 class="card__title">Diseño</h3>
+                    <p class="card__description">Perfilado & Laminado de cejas</p>
+                    <span class="card__subtitle">$999</span>
+                    <a href="precios.html"><button class="servicios__boton">
+                      <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Servicios</span>
+                    </button>
+                  </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col">
+                <article class="card cart2">
+                  <div class="card__content">
+                    <h3 class="card__title">Lifting</h3>
+                    <p class="card__description"> & Tintes de pestañas</p>
+                    <span class="card__subtitle">$999</span>
+                    <a href="precios.html"><button class="servicios__boton">
+                      <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Servicios</span>
+                    </button>
+                  </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+      </div>
+      <!-- <h1 class="servicios_h1 display-1">Nuestros Servicios</h1>
       <div class="row p-5 pt-0">
         <div class="col">
           <div class="card">
@@ -162,7 +282,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- =============================================================================================================================== -->
     <!-- FOOTER -->
